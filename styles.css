@@ -99,25 +99,164 @@
     border-bottom: 1px dashed #ddd;
 }
 
-.floating-admin-btn {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    z-index: 1000;
-    transition: background-color 0.3s;
-}
-
-.floating-admin-btn:hover {
-    background-color: #45a049;
-}
-
 .header {
     text-align: center;
     margin-bottom: 30px;
+}
+
+.dish-image {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.dish-image:hover {
+    transform: scale(1.05);
+}
+
+.dish-detail-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.dish-detail-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.close-button:hover {
+    color: #000;
+}
+
+.dish-detail-content h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.dish-detail-content img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.recipe-section {
+    margin-top: 20px;
+}
+
+.recipe-section h3 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.recipe-steps {
+    padding-left: 20px;
+}
+
+.recipe-steps li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* 详情页样式 */
+.back-btn {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.back-btn:hover {
+    background-color: #45a049;
+}
+
+.detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.detail-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto 30px;
+    display: block;
+}
+
+.detail-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.ingredients-section, 
+.preparation-section {
+    margin-bottom: 30px;
+}
+
+.ingredients-section h2,
+.preparation-section h2 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+#preparation-steps li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    padding-left: 10px;
+}
+
+.header {
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+.menu-item.selected {
+    background-color: #f8f8f8;
+    border-color: #4CAF50;
+}
+
+.menu-item.selected button {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+.menu-item.selected button:hover {
+    background-color: #999;
 } 

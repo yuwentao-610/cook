@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜品详情</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button onclick="window.history.back()" class="back-btn">返回</button>
+            <h1 id="dish-title">菜品详情</h1>
+        </div>
+        
+        <div class="detail-container">
+            <img id="dish-image" src="" alt="菜品图片" class="detail-image">
+            <div class="detail-content">
+                <div class="ingredients-section">
+                    <h2>食材</h2>
+                    <p id="dish-ingredients"></p>
+                </div>
+                <div class="preparation-section">
+                    <h2>制作步骤</h2>
+                    <ol id="preparation-steps"></ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="detail.js"></script>
+</body>
+</html> 

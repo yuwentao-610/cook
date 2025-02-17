@@ -11,25 +11,30 @@
         <div class="header">
             <h1>餐厅点菜系统</h1>
         </div>
-        <a href="admin.html" class="admin-link floating-admin-btn">管理入口</a>
         
         <div class="menu-section">
             <h2>菜单</h2>
             <div class="menu-items">
                 <div class="menu-item">
-                    <img src="https://via.placeholder.com/100" alt="菜品图片">
+                    <div class="dish-image" onclick="showDishDetail('宫保鸡丁')">
+                        <img src="https://via.placeholder.com/100" alt="菜品图片">
+                    </div>
                     <h3>宫保鸡丁</h3>
                     <p class="ingredients">原料: 鸡肉、花生、黄瓜、胡萝卜</p>
                     <button onclick="addToOrder('宫保鸡丁', ['鸡肉', '花生', '黄瓜', '胡萝卜'])">添加到订单</button>
                 </div>
                 <div class="menu-item">
-                    <img src="https://via.placeholder.com/100" alt="菜品图片">
+                    <div class="dish-image" onclick="showDishDetail('水煮鱼')">
+                        <img src="https://via.placeholder.com/100" alt="菜品图片">
+                    </div>
                     <h3>水煮鱼</h3>
                     <p class="ingredients">原料: 鱼片、豆芽、白菜、辣椒</p>
                     <button onclick="addToOrder('水煮鱼', ['鱼片', '豆芽', '白菜', '辣椒'])">添加到订单</button>
                 </div>
                 <div class="menu-item">
-                    <img src="https://via.placeholder.com/100" alt="菜品图片">
+                    <div class="dish-image" onclick="showDishDetail('青椒炒肉')">
+                        <img src="https://via.placeholder.com/100" alt="菜品图片">
+                    </div>
                     <h3>青椒炒肉</h3>
                     <p class="ingredients">原料: 猪肉、青椒、蒜苗</p>
                     <button onclick="addToOrder('青椒炒肉', ['猪肉', '青椒', '蒜苗'])">添加到订单</button>
